@@ -4,7 +4,7 @@ import logging
 
 from sys import stdout
 
-logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 logger.info('initializing bar!')
 

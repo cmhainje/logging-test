@@ -1,9 +1,11 @@
 from logtest.bar import Baz
 
+from .setup import setup_logging_config
+setup_logging_config()
+
 import logging
 from sys import stdout
 
-logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 logger.warning('hello from foo!')
 
